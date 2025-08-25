@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Reverse Word</title>
+    </head>
+    <body>
+        <script>
+            function rev(){
+                let txt=document.getElementById("msg").value;
+                let r=txt.split("").reverse().join("");
+                document.getElementById("res").innerText=r;
+            }
+        </script>
+        
+        <h2>Reverse Text App</h2>
+        <input type="text" id="msg" placeholder="Type something here...">
+        <button onclick="rev()">Reverse</button>
+        <p>Reversed Text : <span id="res"></span></p>
+        </body>
+</html>
